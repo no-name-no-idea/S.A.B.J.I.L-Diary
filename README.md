@@ -15,3 +15,6 @@
 
 5. go에서 구조체 배열을 동적으로 할당하고 싶을 땐 make([]array,0)로 배열 길이를 0으로 할당해준 뒤 append(array, struct)를 통하여 할당을 할 수 있다.   
 `1시간 삽질 🕐 / 2021-03-23`
+
+4. DB에서 INDEX를 잘 활용하자.(ex. 두개의 키를 묶어서 Primary Key를 만든 후 primary key를 다른 테이블에서 Foreign Key로 사용할 때)  
+`NO 삽질 💭 / 2021-03-24`
