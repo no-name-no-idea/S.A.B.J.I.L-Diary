@@ -24,7 +24,12 @@
 
 8. postman을 이용하여 서버 api를 테스트 할 땐 request에서 어떤 형식을 보내고 있는지 확인하자.😂  
 gin에서 post를 통해 request로 들어온 body 값을 볼려고 POST 요청시 계속 오류가 나서 request 처리를 방법을 다 시도해봤다. 하지만 계속 오류가 나서 요청을 보낸 Postman을 확인해보니 슬프게도 JSON이 아닌 Text형태로 보내고 있었다.🤣🤣🤣  
-`대략 3시간 삽질 🕐 / 2021-03-25`
+`3시간 삽질 🕐 / 2021-03-25`
 
 9. 문자열과 변수를 합칠 땐 변수의 타입을 확인하자. 만약 변수가 int라면 string으로 꼭 감싸주자  
-`대략 5분 삽질 5️⃣ / 2021-03-25`
+`5분 삽질 5️⃣ / 2021-03-25`
+
+10. PostgreSQL에서 자동 순번 증가를 위해 IDENTITY (1, 1) 구문을 사용하면 밑의 오류가 뜰 것이다.  
+`ERROR:  syntax error at or near "IDENTITY"`
+PostgresSQL에서는 위의 구문 대신 GENERATED { ALWAYS | BY DEFAULT } AS IDENTITY 를 지원한다.
+`30분 삽질 🕧 / 2021-03-25`
