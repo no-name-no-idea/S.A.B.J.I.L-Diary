@@ -30,6 +30,6 @@ gin에서 post를 통해 request로 들어온 body 값을 볼려고 POST 요청�
 `5분 삽질 5️⃣ / 2021-03-25`
 
 10. PostgreSQL에서 자동 순번 증가를 위해 IDENTITY (1, 1) 구문을 사용하면 밑의 오류가 뜰 것이다.  
-`ERROR:  syntax error at or near "IDENTITY"`
-PostgresSQL에서는 위의 구문 대신 GENERATED { ALWAYS | BY DEFAULT } AS IDENTITY 를 지원한다.
+`ERROR:  syntax error at or near "IDENTITY"`  
+PostgresSQL에서는 위의 구문 대신 GENERATED { ALWAYS | BY DEFAULT } AS IDENTITY 를 지원한다.  
 `30분 삽질 🕧 / 2021-03-25`
