@@ -37,5 +37,5 @@ PostgresSQL에서는 위의 구문 대신 GENERATED { ALWAYS | BY DEFAULT } AS I
 11. 쿼리문 오타에 조심하자 쿼리문중 PROJECT가 PORJECT로 오타가 났는데 다른 오류인줄 알고 삽질을 했다.  
 `1시간 삽질 🕐 / 2021-03-29`  
 
-12. gRPC의 protoc 명령어를 이용해 .proto 파일을 컴파일 하려고 하는데 `--go_out: protoc-gen-go: Plugin failed with status code 1.` 오류가 떴다. 분명 Path 설정을 해줬는데 무슨 오류인지 아직 삽질 중 
+12. gRPC의 protoc 명령어를 이용해 .proto 파일을 컴파일 하려고 하는데 `--go_out: protoc-gen-go: Plugin failed with status code 1.` 오류가 떴다. 분명 Path 설정을 해줬는데 무슨 오류인지 아직 삽질 중  
 `삽질중 / 2021-03-30`  
