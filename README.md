@@ -38,4 +38,4 @@ PostgresSQL에서는 위의 구문 대신 GENERATED { ALWAYS | BY DEFAULT } AS I
 `1시간 삽질 🕐 / 2021-03-29`  
 
 12. gRPC의 protoc 명령어를 이용해 .proto 파일을 컴파일 하려고 하는데 `--go_out: protoc-gen-go: Plugin failed with status code 1.` 오류가 떴다. 분명 Path 설정을 해줬는데 무슨 오류인지 아직 삽질 중  
-`삽질중 / 2021-03-30`  
+`삽질 중 / 2021-03-30`  
