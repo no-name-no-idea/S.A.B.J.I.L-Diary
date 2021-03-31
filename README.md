@@ -37,5 +37,6 @@ PostgresSQL에서는 위의 구문 대신 GENERATED { ALWAYS | BY DEFAULT } AS I
 11. 쿼리문 오타에 조심하자 쿼리문중 PROJECT가 PORJECT로 오타가 났는데 다른 오류인줄 알고 삽질을 했다.  
 `1시간 삽질 🕐 / 2021-03-29`  
 
-12. gRPC의 protoc 명령어를 이용해 .proto 파일을 컴파일 하려고 하는데 `--go_out: protoc-gen-go: Plugin failed with status code 1.` 오류가 떴다. 분명 Path 설정을 해줬는데 무슨 오류인지 아직 삽질 중  
-`삽질 중 / 2021-03-30`  
+12. gRPC의 protoc 명령어를 이용해 .proto 파일을 컴파일 하려고 하는데 `--go_out: protoc-gen-go: Plugin failed with status code 1.` 오류가 떴다.  
+문제 원인은 protocbuf에는 go 컴파일이 기본 지원이 되지 않는다. 그래서 `go get -d -u github.com/golang/protobuf/protoc-gen-go`을 통하여 go 컴파일러를 따로 집어 넣어줘야 하였다. 하지만 저 명령어로 get을 했다해서 끝난것이 아니라 gopath로 지정한 폴더의 bin에 가면 protoc-gen-go.exe 파일을 설치한 protocbuf의 bin으로 이동시킨 후 protocbuf의 bin 폴더를 환경변수 설정을 시켜주어야 한다.  
+`4시간 삽질 🕓 / 2021-03-31`  
