@@ -43,4 +43,5 @@ PostgresSQL에서는 위의 구문 대신 GENERATED { ALWAYS | BY DEFAULT } AS I
 
 13. gRPC의 서버쪽 코드를 작성하다보면 `RegisterAddServiceServer(s *grpc.Server, srv AddServiceServer)`에서 구조체를 사용하여 서버를 띄어줘야 한다. 이 때 .proto에 선언한 함수들에 대하여 서버에서 모두 함수 작성을 하지 않으면 오류가 발생하게 된다.   
 `cannot use (server literal) (value of type server) as proto.AddServiceServer value in argument to pb.RegisterAddServiceServer: missing method ConnectServer`  
-때문에 테스트를 하더라도 모든 함수를 조금이라도 작성한 후에 해야 오류없이 진행할 수 있다
+때문에 테스트를 하더라도 모든 함수를 조금이라도 작성한 후에 해야 오류없이 진행할 수 있다.  
+`5분 삽질 5️⃣ / 2021-04-05`
