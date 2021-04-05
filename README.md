@@ -40,3 +40,7 @@ PostgresSQL에서는 위의 구문 대신 GENERATED { ALWAYS | BY DEFAULT } AS I
 12. gRPC의 protoc 명령어를 이용해 .proto 파일을 컴파일 하려고 하는데 `--go_out: protoc-gen-go: Plugin failed with status code 1.` 오류가 떴다.  
 문제 원인은 protocbuf에는 go 컴파일이 기본 지원이 되지 않는다. 그래서 `go get -d -u github.com/golang/protobuf/protoc-gen-go`을 통하여 go 컴파일러를 따로 집어 넣어줘야 하였다. 하지만 저 명령어로 get을 했다해서 끝난것이 아니라 gopath로 지정한 폴더의 bin에 가면 protoc-gen-go.exe 파일을 설치한 protocbuf의 bin으로 이동시킨 후 protocbuf의 bin 폴더를 환경변수 설정을 시켜주어야 한다.  
 `4시간 삽질 🕓 / 2021-03-31`  
+
+13. gRPC의 서버쪽 코드를 작성하다보면 `RegisterAddServiceServer(s *grpc.Server, srv AddServiceServer)`에서 구조체를 사용하여 서버를 띄어줘야 한다. 이 때 .proto에 선언한 함수들에 대하여 서버에서 모두 함수 작성을 하지 않으면 오류가 발생하게 된다.   
+`cannot use (server literal) (value of type server) as proto.AddServiceServer value in argument to pb.RegisterAddServiceServer: missing method ConnectServer`  
+때문에 테스트를 하더라도 모든 함수를 조금이라도 작성한 후에 해야 오류없이 진행할 수 있다
