@@ -46,5 +46,8 @@ PostgresSQL에서는 위의 구문 대신 GENERATED { ALWAYS | BY DEFAULT } AS I
 때문에 테스트를 하더라도 모든 함수를 조금이라도 작성한 후에 해야 오류없이 진행할 수 있다.  
 `5분 삽질 5️⃣ / 2021-04-05`  
 
-13. query문의 문법은 언제나 다시 확인해 보아야한다. `insert into () value ()` => `insert into () values ()`  
+14. query문의 문법은 언제나 다시 확인해 보아야한다. `insert into () value ()` => `insert into () values ()`  
 `5분 삽질 5️⃣ / 2021-04-07`
+
+15. gin에서 http 코드 반환시 존재하지 않는 코드를 반환하면 에러가 난다. `ex) 1번 코드 반환`  
+`5분 삽질 5️⃣ / 2021-04-08`
