@@ -55,5 +55,5 @@ PostgresSQL에서는 위의 구문 대신 GENERATED { ALWAYS | BY DEFAULT } AS I
 16. go 테이블을 전체 조회할 일이 있으면 그 테이블의 default 값을 설정을 해두는 편이 좋다. 만약 아무런 값이 안들어 있으면 조회한 값을 Scan()하려 할때 에러가 발생한다.  
 `10분 삽질 🔟 / 2021-04-09`
 
-16. sql에서 where 조건으로 boolean type을 이용한다면 `where boolean == true` 가 아니라 `where boolean`을 사용한다.  
+17. sql에서 where 조건으로 boolean type을 이용한다면 `where boolean == true` 가 아니라 `where boolean`을 사용한다.  
 `5분 삽질 5️⃣ / 2021-04-09`
