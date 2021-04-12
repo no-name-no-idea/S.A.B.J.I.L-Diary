@@ -57,3 +57,6 @@ PostgresSQL에서는 위의 구문 대신 GENERATED { ALWAYS | BY DEFAULT } AS I
 
 17. sql에서 where 조건으로 boolean type을 이용한다면 `where boolean == true` 가 아니라 `where boolean`을 사용한다.  
 `5분 삽질 5️⃣ / 2021-04-09`
+
+18. 서버에서 에러 처리를 할 때 http code 뿐만 아니라 따로 message를 다르게 작성하면 에러 발생 위치를 찾기 편하다.   
+`NO 삽질 💭 / 2021-04-12`
