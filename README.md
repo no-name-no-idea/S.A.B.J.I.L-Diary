@@ -60,3 +60,26 @@ PostgresSQL에서는 위의 구문 대신 GENERATED { ALWAYS | BY DEFAULT } AS I
 
 18. 서버에서 에러 처리를 할 때 http code 뿐만 아니라 따로 message를 다르게 작성하면 에러 발생 위치를 찾기 편하다.   
 `NO 삽질 💭 / 2021-04-12`
+
+19. 밑에 코드에서 `defer rows.Close()`에서 `defer`을 빼고 써서 for문이 동작이 안됬다.  
+`30분 삽질 🕧 / 2021-04-13`
+```
+selectStmt := `select * from table`
+	rows, err := db.Query(selectStmt)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error(), "message": "Failed to select"})
+		return
+	}
+
+	defer rows.Close()
+
+	for rows.Next() {
+
+		err = rows.Scan(&Id, &Name)
+		if err != nil {
+			c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error(), "message": "잘못된 형식"})
+			return
+		}
+
+	}
+```
