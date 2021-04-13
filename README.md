@@ -63,8 +63,8 @@ PostgresSQL에서는 위의 구문 대신 GENERATED { ALWAYS | BY DEFAULT } AS I
 
 19. 밑에 코드에서 `defer rows.Close()`에서 `defer`을 빼고 써서 for문이 동작이 안됬다.  
 `30분 삽질 🕧 / 2021-04-13`
-```
-selectStmt := `select * from table`
+```go
+	selectStmt := `select * from table`
 	rows, err := db.Query(selectStmt)
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error(), "message": "Failed to select"})
