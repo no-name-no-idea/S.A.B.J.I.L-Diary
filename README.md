@@ -89,3 +89,7 @@ PostgresSQL에서는 위의 구문 대신 GENERATED { ALWAYS | BY DEFAULT } AS I
 
 21. vue를 이용하여 웹에 table을 그릴 때 데이터를 많이 가지고 있으면 웹이 느려지는 줄 알고 db에서 사용할 때마다 불러올 생각을 하였었다. 하지만 데이터를 가지고 있는 것과 별개로 그 많은 데이터들을 화면에 표시하여서 웹이 느려지는 것이 컸다. 실제로 데이터를 가지고 있고 화면에는 일부 데이터만 표시를 하였는데 느려짐이 발생하진 않았다.  
 `NO 삽질 💭 / 2021-04-15`  
+
+22. `Elements in iteration expect to have 'v-bind:key' directives  vue/require-v-for-key`  
+v-for 사용시 `v-bind:key=""`를 사용하여 key값을 정해주지 않으면 위에 오류가 난다.  
+`5분 삽질 5️⃣ / 2021-04-16`   
