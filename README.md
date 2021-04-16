@@ -97,3 +97,6 @@ v-for 사용시 `v-bind:key=""`를 사용하여 key값을 정해주지 않으면
 23. `Avoid using non-primitive value as key, use string/number value instead.`   
 v-for 사용시 위의 warning 메시지가 뜬다면 v-bind:key를 숫자나 문자열이 아닌 다른 형식(json, array)를 사용하고 있는 것이다.  
 `5분 삽질 5️⃣ / 2021-04-16`   
+
+24. 대용량 데이터를 처리할 때에는 되도록 map과 append()(또는 동적 할당)을 사용하지 않는 것이 좋다. 많은 메모리량을 가지지 않는 이상 프로그램 동작이 느려지기 때문이다.
+`NO 삽질 💭 / 2021-04-16`  
