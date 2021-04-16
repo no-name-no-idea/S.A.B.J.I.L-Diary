@@ -93,3 +93,7 @@ PostgresSQL에서는 위의 구문 대신 GENERATED { ALWAYS | BY DEFAULT } AS I
 22. `Elements in iteration expect to have 'v-bind:key' directives  vue/require-v-for-key`  
 v-for 사용시 `v-bind:key=""`를 사용하여 key값을 정해주지 않으면 위에 오류가 난다.  
 `5분 삽질 5️⃣ / 2021-04-16`   
+
+23. `Avoid using non-primitive value as key, use string/number value instead.`   
+v-for 사용시 위의 warning 메시지가 뜬다면 v-bind:key를 숫자나 문자열이 아닌 다른 형식(json, array)를 사용하고 있는 것이다.  
+`5분 삽질 5️⃣ / 2021-04-16`   
