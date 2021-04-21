@@ -103,3 +103,18 @@ v-for 사용시 위의 warning 메시지가 뜬다면 v-bind:key를 숫자나 �
 
 25. Query()에서 결과값이 1개일때는 Query()보다 QueryRow().Scan()을 이용하는 것이 좋다
 `NO 삽질 💭 / 2021-04-20` 
+
+26. golang `_test.go`를 통해 테스트를 할 때 Test 함수는 함수명에 꼭 Test가 먼저 오게 만들어야 한다.  
+go test를 하였을 때 `testing: warning: no tests to run`가 뜬다면 꼭 한번 확인해 보아야 한다.  
+~~~go
+// 올바른 함수명
+func TestCode(t *testing.T) {
+	...
+}
+
+// 잘못된 함수명
+func CodeTest(t *testing.T) {
+	...
+}
+~~~  
+`5분 삽질 5️⃣ / 2021-04-21` 
