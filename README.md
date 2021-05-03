@@ -135,3 +135,6 @@ func CodeTest(t *testing.T) {
 
 30. error 핸들링에 panic() 사용을 지양해야 한다.  
 `NO 삽질 💭 / 2021-04-27`  
+
+31. vue에서 v-bind를 이용하여 img 주소를 남길때 현 vue 프로젝트의 이미지를 나타내고 싶다면 require()을 사용하여야 이미지를 포함하여 보여준다   
+`NO 삽질 💭 / 2021-05-03`  
