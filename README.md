@@ -157,3 +157,15 @@ func CodeTest(t *testing.T) {
 그래서 .git을 제거 하지 않고 push시 해당 디렉토리를 확인하기 어렵다.  
 혹여나 push를 했다면 reset을 하고 다시 push하기를..  
 `NO 삽질 💭 / 2021-05-24`
+
+37. go에서 여러 go루틴을 실행할 때 공유 자원 때문에 mutex를 사용하였다. 공유 자원으로 bool 객체를 하나 생성하여 go루틴을 내의 for문을 빠져나오도록 설계를 하였는데. 다음과 같은 실수를 하였다.  
+~~~go
+		s.rwMutex.RLock()
+		if s.done {
+			break
+		}
+		s.rwMutex.RUnlock()
+~~~  
+s.done을 확인한 후 break를 하는데 문제는 break가 작동되면 s.rwMutex.RUnlock()이 작동하지 않게 된다.  
+이 문제로 다시 go 루틴을 실행할 때 s.done을 다시 false로 만들고 시작하는데 mutex unlock이 되지 않아. 멈춰버리는 현상이 발생하였다.
+`2시간 삽질🕑 / 2021-05-26`
