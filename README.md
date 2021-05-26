@@ -167,5 +167,5 @@ func CodeTest(t *testing.T) {
 		s.rwMutex.RUnlock()
 ~~~  
 s.done을 확인한 후 break를 하는데 문제는 break가 작동되면 s.rwMutex.RUnlock()이 작동하지 않게 된다.  
-이 문제로 다시 go 루틴을 실행할 때 s.done을 다시 false로 만들고 시작하는데 mutex unlock이 되지 않아. 멈춰버리는 현상이 발생하였다.
+이 문제로 다시 go 루틴을 실행할 때 s.done을 다시 false로 만들고 시작하는데 mutex unlock이 되지 않아. 멈춰버리는 현상이 발생하였다.  
 `2시간 삽질🕑 / 2021-05-26`
