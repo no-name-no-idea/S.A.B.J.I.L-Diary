@@ -172,3 +172,7 @@ s.done을 확인한 후 break를 하는데 문제는 break가 작동되면 s.rwM
   
 38. gorm에서 Where() + Find() + Join()은 작동되지 않는다. Where과 Join을 같이 사용하고 싶다면 Table() + Where() + Join() + Scan()을 사용하여야 한다.  
 `30분 삽질 🕧 / 2021-05-28` 
+
+39. gorm은 struct의 맴버 이름을 가지고 컬럼을 구분한다.  
+ex) enabled라는 컬럼을 조회할 때 만약 struct 맴버 내의 이름이 enable로 되어있으면 제대로된 값을 가져오지 못한다.  
+`30분 삽질 🕧 / 2021-05-28` 
