@@ -168,4 +168,7 @@ func CodeTest(t *testing.T) {
 ~~~  
 s.done을 확인한 후 break를 하는데 문제는 break가 작동되면 s.rwMutex.RUnlock()이 작동하지 않게 된다.  
 이 문제로 다시 go 루틴을 실행할 때 s.done을 다시 false로 만들고 시작하는데 mutex unlock이 되지 않아. 멈춰버리는 현상이 발생하였다.  
-`2시간 삽질🕑 / 2021-05-26`
+`2시간 삽질🕑 / 2021-05-26`  
+  
+38. gorm에서 Where() + Find() + Join()은 작동되지 않는다. Where과 Join을 같이 사용하고 싶다면 Table() + Where() + Join() + Scan()을 사용하여야 한다.  
+`30분 삽질 🕧 / 2021-05-28` 
