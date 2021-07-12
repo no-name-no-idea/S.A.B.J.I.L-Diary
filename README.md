@@ -197,3 +197,6 @@ ex) enabled라는 컬럼을 조회할 때 만약 struct 맴버 내의 이름이 
 
 46. gin에서 BindJSON은 한 번 밖에 실행이 안된다. 만약 유동적으로 req를 처리해야할 땐 map[string]insterface{} 자료형의 변수에 BindJSON을 해주자.  
 `1시간 삽질🕐 / 2021-06-24`  
+
+47. go 개발 시 windows에서 daemon 사용법에 대해 검색시 키워드를 `daemon`보다는 `service`로 검색하는 것이 더 좋다. (linux는 daemon, window는 service)  
+`2시간 삽질🕐 / 2021-07-12`  
