@@ -200,3 +200,6 @@ ex) enabled라는 컬럼을 조회할 때 만약 struct 맴버 내의 이름이 
 
 47. go 개발 시 windows에서 daemon 사용법에 대해 검색시 키워드를 `daemon`보다는 `service`로 검색하는 것이 더 좋다. (linux는 daemon, window는 service)  
 `2시간 삽질🕐 / 2021-07-12`  
+
+48. chrome remote desktop 설치시 .msi 파일이 없다고 에러가 뜰때에는 https://dl.google.com/dl/edgedl/chrome-remote-desktop/chromeremotedesktophost-{해당버전}.msi 에 접속하여 다운로드를 받아 설치하면 된다.  
+`30분 삽질 🕧 / 2021-07-14`  
