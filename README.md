@@ -203,3 +203,6 @@ ex) enabled라는 컬럼을 조회할 때 만약 struct 맴버 내의 이름이 
 
 48. chrome remote desktop 설치시 .msi 파일이 없다고 에러가 뜰때에는 https://dl.google.com/dl/edgedl/chrome-remote-desktop/chromeremotedesktophost-{해당버전}.msi 에 접속하여 다운로드를 받아 설치하면 된다.  
 `30분 삽질 🕧 / 2021-07-14`  
+
+49. go 1.5버전 이후로 cross compile을 지원한다. 괜한 삽질(리눅스 pc에 go를 설치 후 빌드를 하는 행위 등) 말고 `set GOOS=linux`를 이용하자. 
+`기타🎸 / 2021-07-19`  
