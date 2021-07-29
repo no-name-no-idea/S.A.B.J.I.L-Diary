@@ -213,5 +213,6 @@ ex) enabled라는 컬럼을 조회할 때 만약 struct 맴버 내의 이름이 
 51. c#에서 grpc를 사용할 때에는 proto 파일에 `option csharp_namespace = "<NAME>";`을 넣은 뒤 .cs파일에 namespace와 맞춰주면 된다.   
 `1시간 삽질🕐 / 2021-07-29`  
 
-51. c#에서 grpc를 사용할 때 .proto에서 repeated 생성하면 readonly 상태이다. 때문에 여러 삽질을 거쳐야 사용할 수 있다.(해결중)   
+51. c#에서 grpc를 사용할 때 .proto에서 repeated 생성하면 readonly 상태이다. 때문에 여러 삽질을 거쳐야 사용할 수 있다.   
+https://stackoverflow.com/questions/16617933/protobuf-net-generated-class-from-proto-is-repeated-field-supposed-to-be-re 참조
 `1시간 삽질🕐 / 2021-07-29`  
