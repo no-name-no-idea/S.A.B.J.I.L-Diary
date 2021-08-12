@@ -222,3 +222,6 @@ https://stackoverflow.com/questions/16617933/protobuf-net-generated-class-from-p
 
 54. c#에서는 .proto에서 정의해준 함수명 그대로 사용하면 된다. 반면 go는 .proto에서 함수를 소문자로 정의하면 컴파일시 자동으로 앞글자를 대문자로 만들어준다.   
 `1시간 삽질🕐 / 2021-08-04`  
+
+55. 언제나 느끼지만 TypeScript는 JS 개발자의 수명연장에 큰 공여를 했다.   
+`기타🎸 / 2021-08-12`  
