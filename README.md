@@ -225,3 +225,6 @@ https://stackoverflow.com/questions/16617933/protobuf-net-generated-class-from-p
 
 55. 언제나 느끼지만 TypeScript는 JS 개발자의 수명연장에 큰 공여를 했다.   
 `기타🎸 / 2021-08-12`  
+
+56. vue-grid-layout 사용시 layout.sync 설정에 유의하자  
+`30분 삽질 🕧 / 2021-08-30`  
