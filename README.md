@@ -228,3 +228,6 @@ https://stackoverflow.com/questions/16617933/protobuf-net-generated-class-from-p
 
 56. vue-grid-layout 사용시 layout.sync 설정에 유의하자  
 `30분 삽질 🕧 / 2021-08-30`  
+
+57. vue-grid-layout에서 drag/drop 구현시 grid-item 태그 안쪽에서 사용하는 데이터 중 슬라이스가 있다면 범위를 초과하지 않았는지, 예외처리를 해줬는지 확인. 예외처리를 안할 시 개발자 모드에 수많은 error를 보게 될 것이다.   
+`30분 삽질 🕧 / 2021-09-08`  
